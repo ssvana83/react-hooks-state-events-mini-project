@@ -2,7 +2,7 @@ export const CATEGORIES = ["All", "Code", "Food", "Money", "Misc"];
 
 export const TASKS = [
   {
-    text: "Buy rice",
+    text: "buy rice",
     category: "Food",
   },
   {

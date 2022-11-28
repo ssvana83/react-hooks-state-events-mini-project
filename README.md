@@ -11,24 +11,27 @@ To build on what you've learned over the course of this section, we'll be
 building out a simple task list app to practice working with state and events,
 focusing in particular on working with arrays.
 
+## Heirarchy
+-----------------data.js-------------(wheretaskslive)
+
+----------------App.js (parent)-------------
+CategoryFilter.js---NewTaskForm.js-----TaskList.js
+----------------------------------------Task.js
 ## Deliverables
 
 There is some starter code built out for all of the components you'll need. The
 data for the application is imported in `App`, so you'll need to pass that data
 down to the components that need it as props.
-
 Run `npm install` and `npm start`, then check out the starter code in the
 browser. You'll see a console message with the `TASK` and `CATEGORY` data you'll
 need to pass down from `App`.
-
-### TaskList
-
+### TaskList DONE
 First, we'll want to display all the tasks in our app. Pass down the task data
 from `App` to `TaskList`, and display each task using the `Task` component. Make
 sure to use a `key` prop!
+*taskList ordered list with loop to display each task
 
 ### Task
-
 Update the `Task` component so that it shows the task's text and category.
 
 _When the delete button is clicked_, the task should be removed from the list.
